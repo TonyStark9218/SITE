@@ -1,0 +1,10 @@
+{
+    "rewrites": [
+      { "source": "/api/:path*", "destination": "/api/:path*" }
+    ],
+    "functions": {
+      "api/airdrops.js": { "memory": 128 },
+      "api/users.js": { "memory": 128 },
+      "api/telegram.js": { "memory": 128 }
+    }
+  }
