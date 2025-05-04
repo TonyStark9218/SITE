@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-light: #ffffff;
+  --bg-dark: #1a202c;
+  --text-light: #1a202c;
+  --text-dark: #e2e8f0;
+}
+
+body {
+  @apply bg-[var(--bg-light)] text-[var(--text-light)] dark:bg-[var(--bg-dark)] dark:text-[var(--text-dark)];
+}
+
+.airdrop-card {
+  @apply p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow bg-white dark:bg-gray-800;
+}
+
+.tag-chip {
+  @apply px-2 py-1 rounded-full text-sm bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200;
+}
